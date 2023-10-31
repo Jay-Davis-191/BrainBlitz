@@ -37,7 +37,7 @@ Each primary feature consists of many sub-features that improve the use and conv
 
 ### Additional Features
 Addditional features are available in the app and they include: 
-- Send a tweet to Twitter that contains their current progress among all 3 primary features. There is a default for the tweet but it is customisable.
+- Send a tweet to Twitter that contains their current progress among all 3 primary features. There is a default for the tweet but it is customizable.
 - User can change the time and difficulty for the Countdown game.
 - Change their display name in the default tweet from the Settings page.
 - Reset their progress on one or all primary features. 
