@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    tools:context=".FlashcardActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/flashcardTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="-10dp">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flashcards" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reminders" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/countdown" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/flashcardContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:hint="@string/flashcard_content"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginHorizontal="10dp">
+
+        <Button
+            android:id="@+id/newFlashcardButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:textSize="15sp"
+            android:text="@string/new_flashcard" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" >
+
+            <Button
+                android:id="@+id/prevButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+
+                android:textSize="15sp"
+                android:text="@string/prev"
+                android:layout_marginEnd="5dp" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="15sp"
+                android:text="@string/next"
+                android:layout_marginStart="5dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

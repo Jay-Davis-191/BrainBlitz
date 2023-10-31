@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReminderActivity"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/mainTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="-10dp">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flashcards" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reminders" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/countdown" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upcoming_work"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/highPriorityWorkView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/high_priority"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/cool"
+            android:layout_marginBottom="5dp"
+            />
+
+        <ListView
+            android:id="@+id/highPriorityWorkList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:dividerHeight="2dp"
+            android:layout_marginBottom="10dp"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/otherWorkView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/other"
+            android:textStyle="bold"
+            android:textColor="@color/cool"
+            android:textSize="25sp"
+            />
+
+        <ListView
+            android:id="@+id/otherWorkList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:dividerHeight="2dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/newReminderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/new_reminder"
+        android:textSize="20sp"
+        android:background="@drawable/menu_buttons"
+        />
+
+</LinearLayout>

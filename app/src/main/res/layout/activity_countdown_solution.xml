@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/light_blue"
+    tools:context=".CountdownSolution">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/step_by_step"
+        android:theme="@style/AppTheme.FlashcardEntries"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/solutionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:theme="@style/AppTheme.FlashcardEntries"
+        android:hint="@string/output_hint"
+        android:textSize="25sp" />
+
+
+</LinearLayout>

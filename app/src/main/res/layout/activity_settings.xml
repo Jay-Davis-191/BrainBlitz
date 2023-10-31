@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/username"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="25sp"/>
+        <EditText
+            android:id="@+id/usernameEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:background="@null"
+            android:inputType="text"
+            android:textSize="25sp"
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="@string/time_seconds"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+        <RadioGroup
+            android:id="@+id/timesRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/thirtySecButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="@string/short_time"
+                android:textSize="25sp" />
+            <RadioButton
+                android:id="@+id/sixtySecButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/med_time"
+                android:textSize="25sp" />
+            <RadioButton
+                android:id="@+id/ninetySecButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/long_time"
+                android:textSize="25sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:text="@string/difficulty"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/difficultyRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/easyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:text="@string/easy"
+                    android:textSize="25sp" />
+                <RadioButton
+                    android:id="@+id/mediumButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/medium"
+                    android:textSize="25sp" />
+                <RadioButton
+                    android:id="@+id/hardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/hard"
+                    android:textSize="25sp" />
+                <RadioButton
+                    android:id="@+id/extremeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/extreme"
+                    android:textSize="25sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </TableRow>
+
+
+    <Button
+        android:id="@+id/clearFlashcardsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/clear_flashcards"
+        android:layout_marginBottom="20dp"
+        android:textSize="25sp"
+        android:background="@drawable/menu_buttons"
+        />
+
+    <Button
+        android:id="@+id/clearRemindersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/clear_reminders"
+        android:layout_marginBottom="20dp"
+        android:textSize="25sp"
+        android:background="@drawable/menu_buttons"
+        />
+
+
+    <Button
+        android:id="@+id/restartTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/restart_time"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/menu_buttons"
+        />
+
+
+    <Button
+        android:id="@+id/restartCountdownScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:text="@string/restart_countdown"
+        android:textSize="25sp"
+        android:background="@drawable/menu_buttons"
+        />
+
+    </LinearLayout>
+</ScrollView>

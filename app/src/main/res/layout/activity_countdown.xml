@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".CountdownActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/countdownTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="-10dp">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flashcards" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reminders" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/countdown" />
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.3" >
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textSize="25sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/restart"
+            />
+
+        <Button
+            android:id="@+id/passButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textSize="25sp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/pass"
+            />
+    </TableRow>
+
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:textSize="25sp"
+        android:hint="@string/time_countdown_hint"
+        android:layout_weight="0.1" />
+
+    <TextView
+        android:id="@+id/requiredNumView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:hint="@string/countdown_total_hint"
+        android:layout_weight="0.1" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3">
+            <Button
+                android:id="@+id/firstNumButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="30sp"
+                android:layout_margin="5dp"
+                android:text="@string/num1"/>
+            <Button
+                android:id="@+id/secondNumButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="30sp"
+                android:layout_margin="5dp"
+                android:text="@string/num2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3">
+            <Button
+                android:id="@+id/thirdNumButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="30sp"
+                android:layout_margin="5dp"
+                android:text="@string/num3"/>
+            <Button
+                android:id="@+id/fourthNumButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="30sp"
+                android:layout_margin="5dp"
+                android:text="@string/num4"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3">
+            <Button
+                android:id="@+id/fifthNumButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="30sp"
+                android:layout_margin="5dp"
+                android:text="@string/num5"/>
+            <Button
+                android:id="@+id/sixthNumButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="30sp"
+                android:layout_margin="5dp"
+                android:text="@string/num6"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.3" >
+        <Button
+            android:id="@+id/addButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:textSize="25sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/add"
+            />
+        <Button
+            android:id="@+id/subtractButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            android:layout_marginEnd="10dp"
+            android:text="@string/minus"
+            />
+        <Button
+            android:id="@+id/multiplyButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:textSize="25sp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/multiply"
+            />
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:textSize="25sp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/divide"
+            />
+    </TableRow>
+
+    <Button
+        android:id="@+id/solutionButton"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.8"
+        android:textSize="25sp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/solution"
+        />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

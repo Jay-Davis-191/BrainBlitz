@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="15dp"
+    android:orientation="vertical"
+    tools:context=".StatsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/flashcards"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/flashcards_total"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                />
+            <TextView
+                android:id="@+id/numberOfFlashcardsView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/total_hint"
+                android:textSize="20sp"
+                android:textAlignment="textEnd"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/attributes_total"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                />
+            <TextView
+                android:id="@+id/numberOfAttributesView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/total_hint"
+                android:textSize="20sp"
+                android:textAlignment="textEnd"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/flashcards_attributes"
+                android:textSize="20sp"
+                android:textAlignment="textStart" />
+            <TextView
+                android:id="@+id/allFlashcardAttributes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/attributes_hint"
+                android:textSize="20sp"
+                android:textAlignment="textEnd"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/flashcards_time"
+                android:textSize="20sp"
+                android:textAlignment="textStart" />
+            <TextView
+                android:id="@+id/timeOnFlashcards"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/time_hint"
+                android:textSize="20sp"
+                android:textAlignment="textEnd"
+                />
+        </TableRow>
+    </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/reminders"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            />
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/reminders_total"
+                android:textSize="20sp"
+                android:textAlignment="textStart" />
+            <TextView
+                android:id="@+id/numberOfRemindersView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/total_hint"
+                android:textSize="20sp"
+                android:textAlignment="textEnd"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/priority_reminder_total"
+                android:textSize="20sp"
+                android:textAlignment="textStart" />
+            <TextView
+                android:id="@+id/priorityTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/priority_total"
+                android:textSize="20sp"
+                android:textAlignment="textEnd"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/low_priority_reminder_total"
+                android:textSize="20sp"
+                android:textAlignment="textStart" />
+            <TextView
+                android:id="@+id/otherTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/non_priority_total"
+                android:textSize="20sp"
+                android:textAlignment="textEnd"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/oldest_reminder"
+                android:textSize="20sp"
+                android:textAlignment="textStart" />
+            <TextView
+                android:id="@+id/oldestReminder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/reminder_hint"
+                android:textSize="20sp"
+                android:textAlignment="textEnd"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/newest_reminder"
+                android:textSize="20sp"
+                android:textAlignment="textStart" />
+            <TextView
+                android:id="@+id/newestReminder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/reminder_hint"
+                android:textSize="20sp"
+                android:textAlignment="textEnd"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/countdown"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="@string/total_score"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    />
+                <TextView
+                    android:id="@+id/scoreView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/total_hint"
+                    android:textSize="20sp"
+                    android:textAlignment="textEnd"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="@string/average_success_rate"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    />
+                <TextView
+                    android:id="@+id/averageSuccessView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/total_hint"
+                    android:textSize="20sp"
+                    android:textAlignment="textEnd"
+                    />
+            </TableRow>
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/tweet"
+            android:layout_marginBottom="-10dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            />
+
+        <EditText
+            android:id="@+id/tweetView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginBottom="20dp"
+            android:padding="15dp"
+            android:hint="@string/tweet_hint"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@null"
+            android:textSize="20sp"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/tweetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:text="@string/send_tweet"
+            android:textSize="20sp"
+            android:background="@drawable/menu_buttons"
+            />
+    </LinearLayout>
+</ScrollView>

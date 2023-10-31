@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.educationapp">
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="sensorPortrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EducationApp">
+        <activity
+            android:name=".CountdownSolution"
+            android:label="Solution"
+            android:theme="@style/AppTheme.PopUp"
+            android:exported="false" />
+        <activity
+            android:name=".CountdownActivity"
+            android:label="@string/app_name"
+            android:exported="false" />
+        <activity
+            android:name=".AddFlashcard"
+            android:exported="false"
+            android:label="New Flashcard"
+            android:theme="@style/AppTheme.PopUp" />
+        <activity
+            android:name=".AddReminder"
+            android:exported="false"
+            android:label="New Reminder"
+            android:theme="@style/AppTheme.PopUp" />
+        <activity
+            android:name=".StatsActivity"
+            android:exported="false"
+            android:label="Usage statistics" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="Settings" />
+        <activity
+            android:name=".FlashcardActivity"
+            android:exported="false"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ReminderActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
