@@ -30,7 +30,8 @@ Each primary feature consists of many sub-features that improve the use and conv
 ### Countdown Game
 - Users try to reach the generated number by using the basic mathematical operators (+, -, /, *) with any or all of the 6 given numbers.
 - Users apply two numbers together by clicking on both numbers separately. The first number goes empty and disables itself after it's been used.
-- Users are rewarded with points if they match the required number. Number of points are based on difficulty and time left. 
+- Users are rewarded with points if they match the required number. Number of points are based on difficulty and time left.
+- Depending on the difficulty chosen, the use of the multiply and devide mathematical operators are used more if the difficulty is higher. 
 - Users can reset their working and all 6 numbers if they make a mistake.
 - Users can view the step-by-step solution of how the app generated the target number.
 
