@@ -1,8 +1,8 @@
-# Student-Helper
+# BrainBlitz
 ## Description
 This project is an educational app to aid students with their studies by providing 3 primary features: flashcards, reminders and a fun math game based on the UK show 8 Out Of 10 Cats Does Countdown. With these features, the goal is for students to become more interested and on-top of their studies by keeping them informed of due dates, providing them with great study tool and rewards through the use of the Countdown game. 
 
-I created Student Helper during my first semester of my second year at James Cook University (JCU) where we had to create an educational app solely meant for helping students.
+I created BrainBlitz during my first semester of my second year at James Cook University (JCU) where we had to create an educational app solely meant for helping students.
 
 ## Development and Timeframe
 This app is solely meant for Android devices as it was built in Android Studio. All saved data from the user is stored locally on the device. 
@@ -36,7 +36,7 @@ Each primary feature consists of many sub-features that improve the use and conv
 - Users can view the step-by-step solution of how the app generated the target number.
 
 ### Additional Features
-Addditional features are available in the app and they include: 
+Additional features are available in the app and they include: 
 - Send a tweet to Twitter that contains their current progress among all 3 primary features. There is a default for the tweet but it is customizable.
 - User can change the time and difficulty for the Countdown game.
 - Change their display name in the default tweet from the Settings page.
